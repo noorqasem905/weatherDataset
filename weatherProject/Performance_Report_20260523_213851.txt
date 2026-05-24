@@ -1,0 +1,72 @@
+==================================================
+        SEQUENTIAL PROCESSING OUTPUT
+==================================================
+
+Running Sequential Processors...
+-> [Sequential Simple] Time: 11993495 ns
+
+-> [Sequential Complex] Time: 10646549 ns
+
+==================================================
+ TESTING PERFORMANCE WITH THREAD COUNT: 2
+==================================================
+-> [Outer Threading] Total Matches: 21074
+-> [Outer Threading] Time for 2 threads: 7586900 ns
+--------------------------------------------------
+-> [Inner Lambda]    Total Matches: 21074
+-> [Inner Lambda]    Time for 2 threads: 9439856 ns
+
+==================================================
+ TESTING PERFORMANCE WITH THREAD COUNT: 4
+==================================================
+-> [Outer Threading] Total Matches: 21074
+-> [Outer Threading] Time for 4 threads: 5990465 ns
+--------------------------------------------------
+-> [Inner Lambda]    Total Matches: 21074
+-> [Inner Lambda]    Time for 4 threads: 8484774 ns
+
+==================================================
+ TESTING PERFORMANCE WITH THREAD COUNT: 8
+==================================================
+-> [Outer Threading] Total Matches: 21074
+-> [Outer Threading] Time for 8 threads: 1266135 ns
+--------------------------------------------------
+-> [Inner Lambda]    Total Matches: 21074
+-> [Inner Lambda]    Time for 8 threads: 7895660 ns
+
+==================================================
+ TESTING PERFORMANCE WITH THREAD COUNT: 16
+==================================================
+-> [Outer Threading] Total Matches: 21074
+-> [Outer Threading] Time for 16 threads: 1385148 ns
+--------------------------------------------------
+-> [Inner Lambda]    Total Matches: 21074
+-> [Inner Lambda]    Time for 16 threads: 1231740 ns
+
+==================================================
+ TESTING PERFORMANCE WITH THREAD COUNT: 32
+==================================================
+-> [Outer Threading] Total Matches: 21074
+-> [Outer Threading] Time for 32 threads: 1954766 ns
+--------------------------------------------------
+-> [Inner Lambda]    Total Matches: 21074
+-> [Inner Lambda]    Time for 32 threads: 2074551 ns
+
+==================================================
+ TESTING PERFORMANCE WITH THREAD COUNT: 64
+==================================================
+-> [Outer Threading] Total Matches: 21074
+-> [Outer Threading] Time for 64 threads: 3484726 ns
+--------------------------------------------------
+-> [Inner Lambda]    Total Matches: 21074
+-> [Inner Lambda]    Time for 64 threads: 3634708 ns
+
+==================================================
+ TESTING PERFORMANCE WITH THREAD COUNT: 128
+==================================================
+-> [Outer Threading] Total Matches: 21074
+-> [Outer Threading] Time for 128 threads: 7021930 ns
+--------------------------------------------------
+-> [Inner Lambda]    Total Matches: 21074
+-> [Inner Lambda]    Time for 128 threads: 6812618 ns
+

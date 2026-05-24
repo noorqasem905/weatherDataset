@@ -1,27 +1,32 @@
-
 package com.mycompany.weatherproject;
 
+import java.io.File;
 import java.util.List;
 
 /**
  *
- * @author nqasem
- */
+ * @author Noor Alden Qasem 202211008
+ * 
+ * */
 public class OuterThreadProcessor implements Runnable{
-    List<Player> weather;
+    // Edit it if you want unreal data <Player>
+    List<File> weather;
     private int matchCount = 0;
-    public OuterThreadProcessor(List<Player> weather) {
+    public OuterThreadProcessor(List<File> weather) {
         this.weather = weather;
     }
 
     
     @Override
     public void run() {
-        for (Player p : weather) {
-            double score = 0.4 * p.getPace() + 0.3 * p.getShooting() + 0.3 * p.getDribbling();
-        if (score > 85.0) {
-                matchCount++;
-        }
+        for (File file : weather) {
+            List<weatherData> rows = SequentialProcessor.readRowsFromExcelFile(file);
+            for (weatherData p : rows) {
+                double score = (0.5 * p.getTemperature()) + (0.3 * p.getHumidity() * 100) - (0.2 * p.getWindSpeed());
+            if (score > 30.0) {
+                    matchCount++;
+            }
+            }
         }
     }
     public int getMatchCount() {

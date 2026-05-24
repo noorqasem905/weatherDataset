@@ -1,9 +1,10 @@
 
-package com.mycompany.project;
+package com.mycompany.weatherproject;
 
 /**
  *
- * @author USER
+ * @author Zaid Alqudsi 202120148
+ * 
  */
 public class weatherData {
     private String formattedDate;

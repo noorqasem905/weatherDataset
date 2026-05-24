@@ -1,4 +1,15 @@
+//This file is only for test for unreal data
+/*
+    which we use it to work Parallels in the project :)
+*/
+
 package com.mycompany.weatherproject;
+
+/**
+ *
+ * @author Noor Alden Qasem 202211008
+ * 
+ */
 
 public class Player {
     private String name;
@@ -13,7 +24,6 @@ public class Player {
         this.dribbling = dribbling;
     }
 
-    // الـ Getters الـضرورية لشغل التوازي والمعادلات
     public String getName() { return name; }
     public double getPace() { return pace; }
     public double getShooting() { return shooting; }
